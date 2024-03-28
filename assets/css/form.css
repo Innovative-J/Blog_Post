@@ -1,0 +1,19 @@
+/* form css */
+fieldset {
+  border: none;
+  margin: 0 auto;
+  width: 10%;
+  padding: 20px;
+  font-size: 20px;
+}
+fieldset label,
+fieldset input,
+fieldset textarea {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.submit {
+ margin: 0 auto ;
+
+}

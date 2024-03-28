@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog site</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+  </head>
+
+  <body>
+    <div class="container light">
+      <!-- this header will contain a title that will have a button to switch from light to dark under it  -->
+      <header class="bg-switch">
+        <h1><span>Where great Ideas and minds come to Blog</span></h1>
+        <section class="dark">
+          <div class="btn">
+            <!-- this is my slider button -->
+            <input type="checkbox" id="darkmode-toggle" />
+            <label for="darkmode-toggle" class="slider">
+            </label>
+          </div>
+        </section>  
+      </header>
+
+      <!-- This section will contain two divs deviding the image and the form post from under it  -->
+      <section class="bg-switch">
+        <!-- this div will contain a main photo of the blog post. -->
+        <div class="image-container">
+          <img
+            src="assets/imgs/pexels-eva-bronzini-6475418.jpg"
+            alt="the word idea on wodden blocks"
+          />
+        </div>
+
+        <!-- this form will send you to another page of a form post -->
+        <div class="form">
+          <h2>Any Ideas?</h2>
+          <fieldset>
+            <form action="blog.html">
+              <label for="User">Username:</label>
+              <input type="text" id="User" name="User" />
+              
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" />
+          
+              <label for="content">
+                Please write about any ideas or thoughts!
+                <textarea id="content"></textarea>
+              </label>
+              <input type="submit" value="Submit" class="submit" >
+            </form>
+          </fieldset>
+        </div>
+      </section>
+
+      <script src="assets/js/blog.js"></script>
+      <script src="assets/js/logic.js"></script>
+      <script src="assets/js/form.js"></script>
+      <script src="assets/js/script.js"></script>
+    </div>
+  </body>
+</html>

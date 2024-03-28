@@ -1,0 +1,67 @@
+/* This section will have all of the css inregards of the post blog site */
+body {
+  height: auto;
+  width: 100%;
+  margin: 0%;
+}
+/* blog header css */
+.blog-header {
+  width: 100%;
+  height: 10%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  /* position: sticky;
+  top: 0;
+  padding: 10px 0; */
+
+  /* border: 2px solid black; */
+
+}
+
+.head {
+  width: 140px;
+  height: 60px;
+  /* border: 5px solid black; */
+  margin: -20px 0px 0px 20px ;
+  position: relative;
+  /* margin short hand is, top, right, bottom, and left */
+
+
+}
+.head:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    margin-top: -5px;
+    margin-left: -5px;
+    transition: transform 0.3s;
+    background: rgba(222, 174, 128, 255);
+}
+
+.post-box{
+    /* background-color: white; */
+    padding: 50px;
+    margin: 0px auto;
+    padding:auto  ;
+    display: flex;
+    justify-content: center;    
+}
+.posts{
+    width: 80%;
+    height: 25em;
+    background-color: white;
+    box-shadow: 2px -2px 20px rgb(0, 0, 0) ;
+
+}
+
+/* this button is made to go back a page */
+.back-button {
+    position: absolute;
+    top: 20px; 
+    right: 10px; 
+    background-color: white;
+    height: 30px;
+}
