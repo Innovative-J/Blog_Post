@@ -5,7 +5,7 @@ const titleInput = document.getElementById('title');
 const textInput = document.getElementById('content');
 const submitInput = document.querySelector('.submit');
 
-
+let blogPost= [];
 
 function submitBlog() {
     const obj = {
@@ -13,7 +13,9 @@ function submitBlog() {
         title: titleInput.value,
         content: textInput.value
     };
-    console.log(obj);
+    blogPost.push(obj);
+    console.log(blogPost);
+    localStorage.setItem('blogPost', JSON.stringify(blogPost))
 }
 
 
